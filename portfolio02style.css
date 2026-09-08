@@ -1,17 +1,17 @@
  body{
-        background-color: rgb(105, 54, 117);
+        background-color: rgb(58, 74, 167);
     }
     h1{
-        background-color: rgb(53, 8, 214);
+        background-color: rgb(60, 16, 218);
         color: rgb(255, 231, 10);
     }
     h2{
-        background-color: rgb(231, 19, 150);
-        color: rgb(255, 255, 255);
+        background-color: rgb(62, 18, 221);
+        color: rgb(255, 231, 10);
     }
     p{
-        background-color: aqua;
-        color:rgb(255, 0, 0);
+        background-color: rgb(183, 0, 255);
+        color:rgb(255, 255, 255);
 
     }
     ul{
