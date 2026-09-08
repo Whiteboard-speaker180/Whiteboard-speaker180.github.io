@@ -1,0 +1,22 @@
+ body{
+        background-color: rgb(105, 54, 117);
+    }
+    h1{
+        background-color: rgb(53, 8, 214);
+        color: rgb(255, 231, 10);
+    }
+    h2{
+        background-color: rgb(231, 19, 150);
+        color: rgb(255, 255, 255);
+    }
+    p{
+        background-color: aqua;
+        color:rgb(255, 0, 0);
+
+    }
+    ul{
+        color: white;
+    }
+    ol{
+        color: white;
+    }
