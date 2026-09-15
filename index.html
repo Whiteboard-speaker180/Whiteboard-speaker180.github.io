@@ -1,12 +1,37 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="portfolio02style.css">
-    </head>
-    <body>
-        <h1> Index </h1>
-        <ul>
-            <li><a href="portfolio01.html">Portfolio01</a></li>
-            <li><a href="portfolio02.html">Portfolio02</a></li>
-        </ul>
-    </body>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="portfolio02style.css">
+<style>
+</style>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="Index.html" class="active">Home</a>
+  <a href="portfolio01.html">Portfolio01</a>
+  <a href="portfolio02.html">Portfolio02</a>
+  <a href="portfolio03.html">Portfolio03</a>
+  <a href="dice.html">Dice</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
 </html>
