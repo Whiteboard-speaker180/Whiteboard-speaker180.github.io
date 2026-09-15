@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head><title>Dice</title>
+    <link rel="stylesheet" href="dicestyle.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body> 
+
+    <h1>Roll Dice</h1>
+
+    <img id="image" src="staticreddice.jpg" width="80" height="80"/>
+
+     <input type="text" id="dice1" value="1">
+    <button onclick="rollDice6(), document.getElementById('image').src='rolling6.gif'">Try it</button>
+    <br>
+    <br>
+
+    <img src="4dice.webp" width="80" height="80">
+
+     <input type="text" id="dice2" value="1">
+    <button onclick="rollDice4()">Try it</button>
+    
+    <br>
+    <br>
+
+    <img id="12Dice" src="12dice.webp" width="80" height="80">
+
+     <input type="text" id="dice3" value="1">
+    <button onclick="rollDice12(), document.getElementById('12Dice').src='2dice.jpg'">Try it</button>
+
+    <br>
+    <br>
+
+    <img src="20dice.png" width="80" height="80">
+
+     <input type="text" id="dice4" value="1">
+    <button onclick="rollDice20()">Try it</button>
+
+    <script>
+        function rollDice6()
+        {
+            var dice1 = Math.floor((Math.random() * 6) + 1);
+            document.getElementById("dice1").value = dice1;
+        }
+        function rollDice4()
+        {
+
+            var dice2 = Math.floor((Math.random() * 4) + 1);
+            document.getElementById("dice2").value = dice2;
+        }
+        
+        function rollDice12()
+        {
+
+            var dice3 = Math.floor((Math.random() * 12) + 1);
+            document.getElementById("dice3").value = dice3;
+        }
+
+        function rollDice20()
+        {
+
+            var dice4 = Math.floor((Math.random() * 20) + 1);
+            document.getElementById("dice4").value = dice4;
+        }
+
+        function changeImage(){
+            document.getElementById("image").src = url('20dice.png');
+        }
+    </script>
+</body>
+
+</html>
